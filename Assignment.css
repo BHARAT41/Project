@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "roboto";
 }
 
 .container {
@@ -50,24 +50,21 @@ table tr td input[type="checkbox"] {
   font-size: 14px;
 }
 .header {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   height: 30px;
   width: 100%;
 }
 
 .header img {
   border-radius: 50%;
-  margin: 3px 0 0 10px;
+  margin: 3px 0 0 140px;
 }
 .header p {
   color: rgb(36, 6, 207);
   text-align: center;
   letter-spacing: 2px;
-  font-weight: lighter;
+  font-weight: 500;
   font-size: 19px;
-  margin: 3px 0 0 5px;
+  margin: 3px 0 14px 5px;
 }
 
 .label {
@@ -75,11 +72,11 @@ table tr td input[type="checkbox"] {
   font-weight: 500;
   font-size: 13px;
   margin-top: 50px;
-  font-family: roboto, sans-serif;
+  font-family:roboto;
 }
 
 td {
-  margin-bottom: 6px;
+  margin-top: 14px;
 }
 table tr td select {
   border: 1px solid rgb(241, 241, 241);
@@ -98,7 +95,7 @@ table tr td option {
 }
 
 .submit {
-  margin: 7px 7px 0 10px;
+  margin: 28px 7px 0 10px;
   background-color: rgb(89, 89, 233);
   padding: 7px;
   border-radius: 5px;
@@ -109,7 +106,7 @@ table tr td option {
 .reset {
   text-decoration: underline;
   letter-spacing: 1px;
-  margin-left: 140px;
+  margin:0 0 28px 140px;
 }
 
 .footer {
@@ -118,10 +115,4 @@ table tr td option {
 
 .submit:hover {
   background-color: #6551b3;
-}
-.reset:hover {
-  margin: 2px 0 0 12px;
-  width: 300px;
-  background-color: rgba(238, 231, 231, 0.582);
-  border-radius: 5px;
 }
