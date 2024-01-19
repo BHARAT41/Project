@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="icon" type="image/jpg" href="Img/Logo.png"/>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+ <div class="container">
+
+  <table>
+    <form action="">
+    <tr>
+      <td class="header">
+        <img src="demo/logo.jpg" alt="" height="30" width="30"><br>
+        <p>Personal Information</p>
+      </td>
+    </tr>
+    
+      <tr>
+        <td>
+          <label for="Name" class="label">Enter Your Name</label><br>
+          <input type="text" id="input" placeholder="Your Name" required/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="Email" class="label">Enter Your Email</label><br>
+          <input type="email" id="input" placeholder="Your Email" required/>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="number" class="label">Enter Your Contact</label><br>
+          <input type="text" id="input" placeholder="Your Contact" pattern="[0-9]{10}" maxlength="10" required/>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+            <label for="Address" class="label">Enter Your Address</label><br>
+            <input type="text" id="input" placeholder="Your Address" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+         
+            <select name="Country" id="dropDown" required>
+              <option value="Ind">Country</option>
+              <option value="Ind">Bharat</option>
+              <option value="Usa">USA</option>
+              <option value="Uk">UK</option>
+              <option value="Can">Canada</option>
+            </select>
+            <input type="text" id="pincode" pattern="[0-9]{4}" maxlength="4" name="pincode" placeholder="Pincode">
+      </td>
+      </tr>
+      <tr>
+        <td>
+                <label  class="label">Select Your Gender</label><br>
+                <input type="radio" name="radio"id="Male">
+                <label for="Male" class="light">Male</label>
+                <input type="radio" name="radio" id="Female" required>
+                <label for="Female" class="light">Female</label>
+                <input type="radio" name="radio" id="Other">
+                <label for="Other" class="light">Other</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <label  class="label">Select Your Hobbies</label><br>
+            <input type="checkbox" id="cricket">
+            <label for="cricket" class="light">Cricket</label><br>
+            <input type="checkbox" id="coding">
+            <label for="coding" class="light">Coding</label><br>
+            <input type="checkbox" id="reading">
+            <label for="reading" class="light">Reading</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="button">
+           <input type="submit" name="submit" value="Submit" class="bt submit"><br>
+    
+        </td>
+      </tr>
+
+        <tr>
+          <td >
+            <p class="footer" style="margin-right: 4px; text-decoration: none;">Plusinfosys is globally recognized software company.</p>
+          </td>   
+        </tr>   
+    </form>
+</table>
+ </div>
+    
+
+    </body>
+</html>
