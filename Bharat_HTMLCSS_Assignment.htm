@@ -1,107 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-    <link rel="icon" type="image/jpg" href="Img/Logo.png"/>
-    <link rel="stylesheet" href="demo.css">
-  </head>
-  <body>
- <div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODZONE</title>
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 
-  <table>
-    <form action="">
-    <!--------- Header ----------->
+</head>
+<body>
+    
+    <div class="container flex">
+        <img src="images/banner-img.jpg" alt="" class="imgHome overlap">
+        <header>
+            <a href="#" class="logo"><img width="170" height="58" src="images/logo_1.png" alt=""/></a>
+            <div class="navLinks flex">
+                    <div class="navbar flex">
+                        <li><a href="Assignment3.html" target="_self">HOW IT WORKS</a></li>
+                        <li><a href="servies.html" target="_self">CONTACT AS</a></li>
+                    </div>
+                <div class="header-icons">
+                   <button class="flex">Login</button>
+                </div>
+                
+            </div>
+           
+        </header>
+        <div class="main flex">
+            <div class="title flex">
+                <h1>Discover Yourself , Discover the World</h1>
+                <h1>Apply to your perfect volunteer , intern, or teach abroad program</h1>
+            </div>
+            
+            <div class="tablecontent">
+                <table class="tableflex">
+                    <tr class="noBorder">
+                        <td>Type</td>
+                        <td>Location</td>
+                        <td>Activity</td>
+                    </tr>
+                    <tr class="border">
+                        <td rowspan="2"><select name="" id=""><option value="lorem">volunteerAbroad</option></select></td>
+                        <td style="font-size: 21px;">Anywhere</td>
+                        <td rowspan="2"><select name="" id=""><option value="lorem">Anything</option></select></td>
+                        <td style="background-color:#e53b51;"><a href="#" style="text-decoration: none; color: white; font-size: 21px;">Search</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer flex">
+        <img src="images/logo_1.png" alt="" height="50px" width="160px" class="footImg">
+        <div class="footText flex">
+            <h3>FAQ</h3>
+            <h3>CONTACT AS</h3>
+        </div>
+    </div>
   
-    <tr>
-      <td class="header">
-        <img src="demo/logo.jpg" alt="" height="30" width="30"><br>
-        <p>Personal Information</p>
-      </td>
-    </tr>
-
-    <!-------- Body -------->
-    
-      <tr>
-        <td>
-          <label for="Name" class="label">Enter Your Name</label><br>
-          <input type="text" id="input" placeholder="Your Name" required/>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label for="Email" class="label">Enter Your Email</label><br>
-          <input type="email" id="input" placeholder="Your Email" required/>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <label for="number" class="label">Enter Your Contact</label><br>
-          <input type="text" id="input" placeholder="Your Contact" pattern="[0-9]{10}" maxlength="10" required/>
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-            <label for="Address" class="label">Enter Your Address</label><br>
-            <input type="text" id="input" placeholder="Your Address" required>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <!-- <label for="dropDown">Select Your Country</label><br> -->
-            <select name="Country" id="dropDown" required>
-              <option value="Ind">Country</option>
-              <option value="Ind">India</option>
-              <option value="Usa">Usa</option>
-              <option value="Uk">Uk</option>
-              <option value="Can">Canada</option>
-            </select>
-            <input type="text" id="pincode" pattern="[0-9]{4}" maxlength="4" name="pincode" placeholder="Pincode">
-      </td>
-      </tr>
-      <tr>
-        <td>
-                <label  class="label">Select Your Gender</label><br>
-                <input type="radio" name="radio"id="Male">
-                <label for="Male" class="light">Male</label>
-                <input type="radio" name="radio" id="Female" required>
-                <label for="Female" class="light">Female</label>
-                <input type="radio" name="radio" id="Other">
-                <label for="Other" class="light">Other</label>
-        </td>
-      </tr>
-      <tr>
-        <td>
-            <label  class="label">Select Your Hobbies</label><br>
-            <input type="checkbox" id="cricket">
-            <label for="cricket" class="light">Cricket</label><br>
-            <input type="checkbox" id="coding">
-            <label for="coding" class="light">Coding</label><br>
-            <input type="checkbox" id="reading">
-            <label for="reading" class="light">Reading</label>
-        </td>
-      </tr>
-      <tr>
-        <td class="button">
-           <input type="submit" name="submit" value="Submit" class="bt submit"><br>
-           <input type="reset" value="Reset" class="bt reset">
-        </td>
-      </tr>
-
-    <!------- Footer ------->
-        <tr>
-          <td >
-            <p class="footer"><abbr title="Serving Simplicity" style="margin-right: 4px; text-decoration: none;">Plusinfosys</abbr>is global technology</p>
-          </td>   
-        </tr>   
-    </form>
-</table>
- </div>
-    
-
-    </body>
+</body>
 </html>
